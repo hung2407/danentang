@@ -1,0 +1,9 @@
+### Gửi yêu cầu đăng ký tài khoản
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "name": "Người dùng REST",
+  "email": "restclient@example.com",
+  "password": "123456"
+}
