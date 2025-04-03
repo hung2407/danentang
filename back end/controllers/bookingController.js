@@ -46,3 +46,25 @@ exports.createBooking = async (req, res) => {
     res.status(500).send('Server error');
   }
 };
+
+exports.cancelBooking = async (req, res) => {
+  const { bookingId } = req.params;
+  try {
+    const booking = await Booking.findById(bookingId);
+    if (!booking) return res.status(404).json({ msg: 'Booking không tồn tại' });
+
+    // Cập nhật trạng thái chỗ đỗ
+    const spot = await ParkingSpot.findById(booking.parkingSpot);
+    spot.status = 'available';
+    await spot.save();
+
+    // Cập nhật trạng thái booking
+    booking.status = 'cancelled';
+    await booking.save();
+
+    res.json({ msg: 'Hủy đặt chỗ thành công' });
+  } catch (err) {
+    console.error(err.message);
+    res.status(500).send('Lỗi server');
+  }
+};

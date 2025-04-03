@@ -1,29 +1,55 @@
 const express = require('express');
 const router = express.Router();
-const User = require('../models/User'); // Đảm bảo import đúng model User
+const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const User = require('../models/User');
 
 router.post('/register', async (req, res) => {
-    const { name, email, password, phone } = req.body; // Thêm phone
+    const { name, email, password, phone } = req.body;
 
+    // Kiểm tra trường bắt buộc
     if (!name || !email || !password || !phone) {
         return res.status(400).json({ msg: 'Vui lòng nhập đầy đủ thông tin' });
     }
 
-    let user = await User.findOne({ email });
-    if (user) {
-        return res.status(400).json({ msg: 'User already exists' });
+    try {
+        // Kiểm tra trùng email HOẶC số điện thoại (tối ưu bằng $or)
+        const existingUser = await User.findOne({ $or: [{ email }, { phone }] });
+        if (existingUser) {
+            return res.status(400).json({ 
+                msg: existingUser.email === email ? 'Email đã tồn tại' : 'Số điện thoại đã tồn tại' 
+            });
+        }
+
+        // Mã hóa mật khẩu
+        const salt = await bcrypt.genSalt(10);
+        const hashedPassword = await bcrypt.hash(password, salt);
+
+        // Tạo user mới
+        const user = new User({ 
+            name, 
+            email, 
+            password: hashedPassword, 
+            phone 
+        });
+
+        await user.save();
+
+        // Tạo và trả về JWT token
+        const payload = { user: { id: user.id } };
+        jwt.sign(
+            payload,
+            process.env.JWT_SECRET,
+            { expiresIn: '24h' },
+            (err, token) => {
+                if (err) throw err;
+                res.status(201).json({ token, msg: 'Đăng ký thành công' });
+            }
+        );
+    } catch (err) {
+        console.error(err.message);
+        res.status(500).send('Lỗi server');
     }
-
-    let phoneExists = await User.findOne({ phone });
-    if (phoneExists) {
-        return res.status(400).json({ msg: 'Số điện thoại đã tồn tại' });
-    }
-
-    user = new User({ name, email, password, phone });
-
-    await user.save();
-    res.status(201).json({ msg: 'Đăng ký thành công' });
 });
 
-// Xuất router để dùng trong server.js
 module.exports = router;
