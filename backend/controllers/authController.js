@@ -1,75 +1,92 @@
-// controllers/authController.js
-const User = require('../models/User');
-const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
+const User = require('../models/User');
 
-exports.register = async (req, res) => {
-  const { name, email, phone, password } = req.body;
-  try {
-    // Kiểm tra trùng email HOẶC số điện thoại
-    let user = await User.findOne({ $or: [{ email }, { phone }] });
-    if (user) return res.status(400).json({ msg: 'Email hoặc số điện thoại đã tồn tại' });
+const authController = {
+  // Đăng ký tài khoản
+  async register(req, res) {
+    try {
+      console.log('Đang xử lý đăng ký với dữ liệu:', req.body);
+      
+      // Kiểm tra dữ liệu gửi lên
+      if (!req.body || !req.body.username || !req.body.password || !req.body.email) {
+        return res.status(400).json({
+          success: false,
+          message: 'Thiếu thông tin bắt buộc'
+        });
+      }
 
-    // Tạo user mới
-    user = new User({ name, email, phone, password });
-    const salt = await bcrypt.genSalt(10);
-    user.password = await bcrypt.hash(password, salt);
-    await user.save();
+      const { username, password, email, phone } = req.body;
 
-    // Tạo JWT token
-    const payload = { user: { id: user.id } };
-    jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '24h' }, (err, token) => {
-      if (err) throw err;
-      res.status(201).json({ 
-        token,
-        user: {
-          id: user.id,
-          name: user.name,
-          email: user.email,
-          phone: user.phone
+      // Đăng ký user mới
+      const newUser = await User.register({
+        username,
+        password,
+        email,
+        phone
+      });
+
+      console.log('Đăng ký thành công:', newUser);
+      res.status(201).json({
+        success: true,
+        message: 'Đăng ký thành công',
+        data: newUser
+      });
+    } catch (error) {
+      console.error('Lỗi đăng ký:', error);
+      res.status(400).json({
+        success: false,
+        message: 'Đăng ký thất bại',
+        error: error.message
+      });
+    }
+  },
+
+  // Đăng nhập
+  async login(req, res) {
+    try {
+      console.log('Đang xử lý đăng nhập với:', req.body);
+
+      // Kiểm tra dữ liệu gửi lên
+      if (!req.body || !req.body.username || !req.body.password) {
+        return res.status(400).json({
+          success: false,
+          message: 'Vui lòng nhập username và password'
+        });
+      }
+
+      const { username, password } = req.body;
+
+      // Kiểm tra đăng nhập
+      const user = await User.login(username, password);
+      console.log('Đăng nhập thành công với user:', user);
+
+      // Tạo JWT token
+      const token = jwt.sign(
+        { 
+          user_id: user.user_id, 
+          role: user.role 
+        },
+        process.env.JWT_SECRET,
+        { expiresIn: '24h' }
+      );
+
+      res.json({
+        success: true,
+        message: 'Đăng nhập thành công',
+        data: {
+          user,
+          token
         }
       });
-    });
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Lỗi server');
-  }
-};
-
-exports.login = async (req, res) => {
-  const { email, password } = req.body;
-  try {
-    const user = await User.findOne({ email });
-    if (!user) return res.status(400).json({ msg: 'Invalid Credentials' });
-    
-    const isMatch = await bcrypt.compare(password, user.password);
-    if (!isMatch) return res.status(400).json({ msg: 'Invalid Credentials' });
-    
-    const payload = { user: { id: user.id } };
-    jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: 3600 }, (err, token) => {
-      if (err) throw err;
-      res.json({ 
-        token,
-        user: {
-          id: user.id,
-          name: user.name,
-          email: user.email,
-          phone: user.phone
-        }
+    } catch (error) {
+      console.error('Lỗi đăng nhập:', error);
+      res.status(401).json({
+        success: false,
+        message: 'Đăng nhập thất bại',
+        error: error.message
       });
-    });
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server error');
+    }
   }
 };
 
-exports.getCurrentUser = async (req, res) => {
-  try {
-    const user = await User.findById(req.user.id).select('-password');
-    res.json(user);
-  } catch (err) {
-    console.error(err.message);
-    res.status(500).send('Server error');
-  }
-};
+module.exports = authController; 

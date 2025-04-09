@@ -1,35 +1,61 @@
-// server.js
 const express = require('express');
 const dotenv = require('dotenv');
-const sequelize = require('./config/database');
-const models = require('./models');
+const db = require('./config/database');
+const authRoutes = require('./routes/auth');
 
+// Load biến môi trường
 dotenv.config();
 
+// Khởi tạo express app
 const app = express();
 
+// Middleware
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// Đồng bộ hóa cơ sở dữ liệu
-sequelize.sync({ alter: true }).then(() => {
-  console.log('Đã đồng bộ hóa cơ sở dữ liệu thành công');
-}).catch(err => {
-  console.error('Lỗi khi đồng bộ hóa cơ sở dữ liệu:', err);
+// Log tất cả requests
+app.use((req, res, next) => {
+  console.log(`${req.method} ${req.url}`, req.body);
+  next();
 });
 
-// In giá trị của các module route để debug
-console.log('Auth route:', require('./routes/auth'));
-console.log('Parking route:', require('./routes/parking'));
-console.log('Booking route:', require('./routes/booking'));
+// Routes
+app.use('/api/auth', authRoutes);
+console.log('Auth routes đã được đăng ký tại /api/auth');
 
-// Sử dụng các route middleware
-app.use('/api/auth', require('./routes/auth'));
-app.use('/api/parkings', require('./routes/parking'));
-app.use('/api/bookings', require('./routes/booking'));
+// Route test kết nối database
+app.get('/test-db', async (req, res) => {
+  try {
+    const [rows] = await db.query('SELECT 1 + 1 AS result');
+    res.json({
+      message: 'Kết nối database thành công!',
+      data: rows[0]
+    });
+  } catch (error) {
+    console.error('Lỗi truy vấn:', error);
+    res.status(500).json({
+      message: 'Lỗi kết nối database',
+      error: error.message
+    });
+  }
+});
 
+// Route mặc định
 app.get('/', (req, res) => {
-  res.send('Chào mừng đến với Backend thuê bãi đỗ xe!');
+  res.json({ message: 'Server đang chạy!' });
 });
 
+// Xử lý lỗi
+app.use((err, req, res, next) => {
+  console.error('Lỗi server:', err);
+  res.status(500).json({ 
+    message: 'Lỗi server', 
+    error: err.message 
+  });
+});
+
+// Khởi động server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`Server đang chạy trên cổng ${PORT}`));
+app.listen(PORT, () => {
+  console.log(`Server đang chạy trên port ${PORT}`);
+}); 
