@@ -2,6 +2,7 @@ const express = require('express');
 const dotenv = require('dotenv');
 const db = require('./config/database');
 const authRoutes = require('./routes/auth');
+const bookingRoutes = require('./routes/booking');
 
 // Load biến môi trường
 dotenv.config();
@@ -23,6 +24,8 @@ app.use((req, res, next) => {
 app.use('/api/auth', authRoutes);
 console.log('Auth routes đã được đăng ký tại /api/auth');
 
+app.use('/api/booking', bookingRoutes);
+console.log('Booking routes đã được đăng ký tại /api/booking');
 // Route test kết nối database
 app.get('/test-db', async (req, res) => {
   try {
