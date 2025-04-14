@@ -59,6 +59,7 @@ const createBooking = async (req, res) => {
 
     // Kiểm tra quyền của người dùng
     const userPermission = await parkingModel.checkUserPermission(userId);
+    console.log('🔍 Kiểm tra quyền user:', userId, '=>', userPermission);
     if (!userPermission || !['Read', 'Write', 'Admin'].includes(userPermission)) {
       return res.status(403).json({ message: 'User does not have permission to book' });
     }
@@ -72,12 +73,14 @@ const createBooking = async (req, res) => {
       endDate,
       endTime
     );
+    console.log('🔍 Kiểm tra số chỗ trống:' , availableSpots);
     if (availableSpots <= 0) {
       return res.status(400).json({ message: 'No available spots for the selected time' });
     }
 
     // Tìm spot trống
     const spot = await parkingModel.findAvailableSpot(zoneId, startDate, startTime, endDate, endTime);
+    console.log('🎯 Spot được chọn:', spot);
     if (!spot) {
       return res.status(400).json({ message: 'No available spots for the selected time' });
     }
@@ -92,6 +95,7 @@ const createBooking = async (req, res) => {
     };
 
     const ticketId = await parkingModel.createTicket(ticketData);
+    console.log('🎫 Ticket ID:', ticketId);
 
     // Tạo đặt chỗ
     const bookingData = {
@@ -103,7 +107,7 @@ const createBooking = async (req, res) => {
     };
 
     const bookingId = await parkingModel.createBooking(bookingData);
-
+    console.log('📦 Booking ID:', bookingId);
     res.status(201).json({
       message: 'Booking created successfully',
       booking: {
@@ -123,6 +127,7 @@ const createBooking = async (req, res) => {
       },
     });
   } catch (error) {
+    console.error('❌ Lỗi tại createBooking:', error);
     res.status(500).json({ message: 'Server error', error: error.message });
   }
 };

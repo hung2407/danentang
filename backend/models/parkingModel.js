@@ -9,7 +9,7 @@ const parseDateForMySQL = (dateStr) => {
 // Lấy danh sách các lot_id duy nhất từ bảng spots
 const getParkingZones = async () => {
   try {
-    console.log('🔍 Đang truy vấn parking zones...');
+    console.log(' Đang truy vấn parking zones...');
     const [lots] = await db.query(`
       SELECT DISTINCT 
         s.lot_id,
