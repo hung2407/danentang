@@ -117,10 +117,10 @@ const bookingController = {
   // Tính giá đặt chỗ
   async calculateBookingPrice(req, res) {
     try {
-      const { lotId, bookingType, startTime, endTime } = req.body;
+      const { bookingType, startTime, endTime } = req.body;
 
       // Kiểm tra dữ liệu đầu vào
-      if (!lotId || !bookingType || !startTime || !endTime) {
+      if (!bookingType || !startTime || !endTime) {
         return res.status(400).json({
           success: false,
           message: 'Thiếu thông tin cần thiết'
@@ -128,7 +128,7 @@ const bookingController = {
       }
 
       // Lấy giá phù hợp nhất cho thời điểm hiện tại
-      const priceInfo = await TicketPrice.getCurrentPrice(lotId, bookingType);
+      const priceInfo = await TicketPrice.getCurrentPrice(bookingType);
 
       if (!priceInfo) {
         return res.status(404).json({
@@ -178,7 +178,6 @@ const bookingController = {
       const { 
         userId, 
         vehicleId, 
-        lotId, 
         slotId, 
         priceId, 
         bookingType, 
@@ -190,7 +189,7 @@ const bookingController = {
       } = req.body;
 
       // Kiểm tra dữ liệu đầu vào
-      if (!userId || !lotId || !slotId || !priceId || !bookingType || !startTime || !endTime || !licensePlate || !phoneNumber) {
+      if (!userId || !slotId || !priceId || !bookingType || !startTime || !endTime || !licensePlate || !phoneNumber) {
         return res.status(400).json({
           success: false,
           message: 'Thiếu thông tin cần thiết'
@@ -229,9 +228,8 @@ const bookingController = {
         const bookingId = await Booking.create({
           userId, 
           vehicleId: actualVehicleId, 
-          lotId, 
           slotId, 
-          priceId, 
+          ticketPriceId: priceId, 
           bookingType, 
           startTime, 
           endTime, 
@@ -244,23 +242,15 @@ const bookingController = {
         }
 
         // Lấy thông tin booking vừa tạo
-        const [bookingDetails] = await db.query(`
-          SELECT 
-            b.booking_id, b.status, b.start_time, b.end_time, b.booking_type, b.qr_code,
-            u.username, u.full_name, u.email, u.phone,
-            v.license_plate, v.vehicle_type,
-            s.slot_code, z.zone_name,
-            p.name as parking_lot_name, p.address,
-            tp.price
-          FROM Bookings b
-          JOIN Users u ON b.user_id = u.user_id
-          JOIN Vehicles v ON b.vehicle_id = v.vehicle_id
-          JOIN Slots s ON b.slot_id = s.slot_id
-          JOIN Zones z ON s.zone_id = z.zone_id
-          JOIN Parking_Lots p ON b.lot_id = p.lot_id
-          JOIN Ticket_Prices tp ON b.ticket_price_id = tp.price_id
-          WHERE b.booking_id = ?
-        `, [bookingId]);
+        const bookingDetails = await Booking.getBookingDetails(bookingId);
+
+        if (!bookingDetails) {
+          await db.query('ROLLBACK');
+          return res.status(500).json({
+            success: false,
+            message: 'Không thể lấy thông tin đặt chỗ sau khi tạo'
+          });
+        }
 
         // Tạo payment record
         let totalPrice = 0;
@@ -268,9 +258,9 @@ const bookingController = {
           const start = new Date(startTime);
           const end = new Date(endTime);
           const durationHours = Math.ceil((end - start) / (1000 * 60 * 60));
-          totalPrice = bookingDetails[0].price * durationHours;
+          totalPrice = bookingDetails.price * durationHours;
         } else {
-          totalPrice = bookingDetails[0].price;
+          totalPrice = bookingDetails.price;
         }
 
         const paymentId = await Payment.create(bookingId, totalPrice);
@@ -286,7 +276,7 @@ const bookingController = {
           message: 'Đặt chỗ thành công',
           data: {
             bookingId,
-            bookingDetails: bookingDetails[0],
+            bookingDetails,
             paymentId,
             amount: totalPrice,
             qrCode: qrCodeImage
