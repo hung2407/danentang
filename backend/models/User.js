@@ -10,11 +10,11 @@ const userModel = {
       // Validate dữ liệu
       await this.validateUserData(userData);
 
-      const { username, password, email, phone } = userData;
+      const { username, password, email, phone, full_name = username } = userData;
       
       // Kiểm tra username đã tồn tại
       const [existingUsers] = await db.query(
-        'SELECT username FROM users WHERE username = ?',
+        'SELECT username FROM Users WHERE username = ?',
         [username]
       );
       if (existingUsers.length > 0) {
@@ -23,7 +23,7 @@ const userModel = {
 
       // Kiểm tra email đã tồn tại
       const [existingEmails] = await db.query(
-        'SELECT email FROM users WHERE email = ?',
+        'SELECT email FROM Users WHERE email = ?',
         [email]
       );
       if (existingEmails.length > 0) {
@@ -34,19 +34,20 @@ const userModel = {
       const salt = await bcrypt.genSalt(10);
       const hashedPassword = await bcrypt.hash(password, salt);
 
-      // Thêm user mới với created_at
+      // Thêm user mới
       const [result] = await db.query(
-        `INSERT INTO users (username, password, email, phone, role, created_at) 
-         VALUES (?, ?, ?, ?, 'Customer', NOW())`,
-        [username, hashedPassword, email, phone]
+        `INSERT INTO Users (username, password, full_name, email, phone, role) 
+         VALUES (?, ?, ?, ?, ?, 'customer')`,
+        [username, hashedPassword, full_name, email, phone]
       );
 
       return {
         user_id: result.insertId,
         username,
+        full_name,
         email,
         phone,
-        role: 'Customer'
+        role: 'customer'
       };
     } catch (error) {
       console.error('Lỗi trong quá trình đăng ký:', error);
@@ -59,7 +60,7 @@ const userModel = {
     try {
       // Tìm user theo username
       const [users] = await db.query(
-        'SELECT user_id, username, password, email, phone, role FROM users WHERE username = ?',
+        'SELECT user_id, username, password, full_name, email, phone, role FROM Users WHERE username = ?',
         [username]
       );
 
@@ -111,6 +112,25 @@ const userModel = {
     // Kiểm tra số điện thoại
     if (phone && phone.length !== 10) {
       throw new Error('Số điện thoại phải có 10 chữ số');
+    }
+  },
+
+  // Cập nhật số điện thoại
+  async updatePhone(userId, phone) {
+    try {
+      // Kiểm tra số điện thoại hợp lệ
+      if (phone && phone.length !== 10) {
+        throw new Error('Số điện thoại phải có 10 chữ số');
+      }
+
+      await db.query(
+        'UPDATE Users SET phone = ? WHERE user_id = ?',
+        [phone, userId]
+      );
+      return true;
+    } catch (error) {
+      console.error('Lỗi khi cập nhật số điện thoại:', error);
+      throw error;
     }
   }
 };

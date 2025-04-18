@@ -15,14 +15,15 @@ const authController = {
         });
       }
 
-      const { username, password, email, phone } = req.body;
+      const { username, password, email, phone, full_name } = req.body;
 
       // Đăng ký user mới
       const newUser = await User.register({
         username,
         password,
         email,
-        phone
+        phone,
+        full_name: full_name || username
       });
 
       console.log('Đăng ký thành công:', newUser);

@@ -35,7 +35,7 @@ const promisePool = pool.promise();
 
 // Test kết nối
 promisePool.query('SELECT 1')
-  .then(() => console.log('Kết nối database hoạt động tốt'))
+  .then(() => console.log('database dang chay'))
   .catch(err => console.error('Lỗi test kết nối database:', err));
 
 module.exports = promisePool; 

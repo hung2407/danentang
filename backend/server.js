@@ -2,6 +2,8 @@ const express = require('express');
 const dotenv = require('dotenv');
 const db = require('./config/database');
 const authRoutes = require('./routes/auth');
+const bookingRoutes = require('./routes/booking');
+const cors = require('cors');
 
 // Load biến môi trường
 dotenv.config();
@@ -10,6 +12,7 @@ dotenv.config();
 const app = express();
 
 // Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
@@ -21,34 +24,19 @@ app.use((req, res, next) => {
 
 // Routes
 app.use('/api/auth', authRoutes);
-console.log('Auth routes đã được đăng ký tại /api/auth');
-
-// Route test kết nối database
-app.get('/test-db', async (req, res) => {
-  try {
-    const [rows] = await db.query('SELECT 1 + 1 AS result');
-    res.json({
-      message: 'Kết nối database thành công!',
-      data: rows[0]
-    });
-  } catch (error) {
-    console.error('Lỗi truy vấn:', error);
-    res.status(500).json({
-      message: 'Lỗi kết nối database',
-      error: error.message
-    });
-  }
-});
+app.use('/api/bookings', bookingRoutes);
+console.log('Routes đã được đăng ký: /api/auth, /api/bookings');
 
 // Route mặc định
 app.get('/', (req, res) => {
-  res.json({ message: 'Server đang chạy!' });
+  res.json({ message: 'API Hệ thống quản lý bãi đỗ xe đang hoạt động!' });
 });
 
 // Xử lý lỗi
 app.use((err, req, res, next) => {
   console.error('Lỗi server:', err);
   res.status(500).json({ 
+    success: false,
     message: 'Lỗi server', 
     error: err.message 
   });
@@ -58,4 +46,13 @@ app.use((err, req, res, next) => {
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`Server đang chạy trên port ${PORT}`);
+  
+  // Kiểm tra kết nối database
+  db.query('SELECT 1')
+    .then(() => {
+      console.log('Kết nối database thành công');
+    })
+    .catch(err => {
+      console.error('Lỗi kết nối database:', err);
+    });
 }); 
