@@ -26,4 +26,16 @@ router.get('/user/:userId', authMiddleware, bookingController.getUserBookings);
 // Hủy đặt chỗ
 router.put('/cancel/:bookingId/:userId', authMiddleware, bookingController.cancelBooking);
 
-module.exports = router; 
+// Check-in booking
+router.post('/checkin', authMiddleware, bookingController.checkInBooking);
+
+// Check-out booking
+router.post('/checkout', authMiddleware, bookingController.checkOutBooking);
+
+// Trả về mã QR sau khi thanh toán thành công
+router.post('/invoice', authMiddleware, bookingController.getInvoiceAndQRCode);
+
+// Lấy mã QR bằng bookingId
+router.get('/invoice/:bookingId', authMiddleware, bookingController.getInvoiceById);
+
+module.exports = router;

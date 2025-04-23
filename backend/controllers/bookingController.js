@@ -74,15 +74,18 @@ const bookingController = {
       const existingVehicle = await Vehicle.findByLicensePlate(licensePlate);
 
       if (existingVehicle) {
-        // Xe đã tồn tại trong hệ thống
-        // Kiểm tra xem xe có thuộc về user không
-        if (existingVehicle.user_id !== parseInt(userId)) {
+        // Kiểm tra xem xe này có booking nào chưa hoàn thành không
+        const [activeBookings] = await db.query(
+          'SELECT * FROM Bookings WHERE vehicle_id = ? AND status NOT IN ("completed", "cancelled")',
+          [existingVehicle.vehicle_id]
+        );
+        if (activeBookings.length > 0) {
           return res.status(400).json({
             success: false,
-            message: 'Biển số xe này đã được đăng ký bởi người dùng khác'
+            message: 'Biển số xe này đang có booking chưa hoàn thành'
           });
         }
-
+        // Nếu không còn booking nào active, cho phép booking lại
         return res.json({
           success: true,
           message: 'Biển số xe hợp lệ',
@@ -143,8 +146,11 @@ const bookingController = {
         // Tính thời gian đặt chỗ theo giờ
         const start = new Date(startTime);
         const end = new Date(endTime);
-        const durationHours = Math.ceil((end - start) / (1000 * 60 * 60));
-        
+        let durationHours = Math.ceil((end - start) / (1000 * 60 * 60));
+        if (durationHours <= 0) {
+          // Nếu end < start, cộng thêm 24h (qua ngày hôm sau)
+          durationHours += 24;
+        }
         // Tính giá: giá/giờ * số giờ
         totalPrice = priceInfo.price * durationHours;
       } else if (bookingType === 'monthly') {
@@ -172,7 +178,7 @@ const bookingController = {
     }
   },
 
-  // Đặt chỗ đỗ xe
+  // Đặt chỗ đỗ xe (cập nhật xác thực thời gian thực, giữ chỗ tạm thời)
   async createBooking(req, res) {
     try {
       const { 
@@ -188,7 +194,6 @@ const bookingController = {
         phoneNumber 
       } = req.body;
 
-      // Kiểm tra dữ liệu đầu vào
       if (!userId || !slotId || !priceId || !bookingType || !startTime || !endTime || !licensePlate || !phoneNumber) {
         return res.status(400).json({
           success: false,
@@ -196,34 +201,48 @@ const bookingController = {
         });
       }
 
-      // Bắt đầu transaction
       await db.query('START TRANSACTION');
-
       try {
-        // Kiểm tra xem slot có còn trống không
-        const [slotStatus] = await db.query(
-          'SELECT status FROM Slots WHERE slot_id = ?',
+        // Kiểm tra trạng thái slot: chỉ cho phép nếu available hoặc pending nhưng đã hết hạn giữ
+        const [slotRows] = await db.query(
+          `SELECT status, pending_until FROM Slots WHERE slot_id = ? FOR UPDATE`,
           [slotId]
         );
-
-        if (slotStatus.length === 0 || slotStatus[0].status !== 'available') {
+        if (slotRows.length === 0) {
           await db.query('ROLLBACK');
           return res.status(400).json({
             success: false,
-            message: 'Chỗ đỗ xe không còn trống'
+            message: 'Chỗ đỗ xe không tồn tại'
           });
         }
+        const slot = slotRows[0];
+        const now = new Date();
+        let canHold = false;
+        if (slot.status === 'available') {
+          canHold = true;
+        } else if (slot.status === 'pending' && slot.pending_until && new Date(slot.pending_until) < now) {
+          canHold = true;
+        }
+        if (!canHold) {
+          await db.query('ROLLBACK');
+          return res.status(409).json({
+            success: false,
+            message: 'Chỗ đỗ xe đã có người giữ hoặc đang được đặt.'
+          });
+        }
+        // Giữ chỗ: cập nhật status = 'pending', pending_until = NOW() + 5 phút
+        await db.query(
+          `UPDATE Slots SET status = 'pending', pending_until = DATE_ADD(NOW(), INTERVAL 5 MINUTE) WHERE slot_id = ?`,
+          [slotId]
+        );
 
         // Kiểm tra và đăng ký vehicle nếu cần
         let actualVehicleId = vehicleId;
-
         if (!actualVehicleId) {
           actualVehicleId = await Vehicle.create(userId, licensePlate, vehicleType);
         }
-
         // Tạo mã QR
         const qrCode = uuidv4();
-
         // Tạo booking
         const bookingId = await Booking.create({
           userId, 
@@ -235,15 +254,12 @@ const bookingController = {
           endTime, 
           qrCode
         });
-
         // Cập nhật thông tin người dùng nếu cần
         if (phoneNumber) {
           await User.updatePhone(userId, phoneNumber);
         }
-
         // Lấy thông tin booking vừa tạo
         const bookingDetails = await Booking.getBookingDetails(bookingId);
-
         if (!bookingDetails) {
           await db.query('ROLLBACK');
           return res.status(500).json({
@@ -251,29 +267,27 @@ const bookingController = {
             message: 'Không thể lấy thông tin đặt chỗ sau khi tạo'
           });
         }
-
         // Tạo payment record
         let totalPrice = 0;
         if (bookingType === 'daily') {
           const start = new Date(startTime);
           const end = new Date(endTime);
-          const durationHours = Math.ceil((end - start) / (1000 * 60 * 60));
+          let durationHours = Math.ceil((end - start) / (1000 * 60 * 60));
+          if (durationHours <= 0) {
+            durationHours += 24;
+          }
           totalPrice = bookingDetails.price * durationHours;
         } else {
           totalPrice = bookingDetails.price;
         }
-
         const paymentId = await Payment.create(bookingId, totalPrice);
-
         // Commit transaction
         await db.query('COMMIT');
-
         // Tạo QR code
         const qrCodeImage = await QRCode.toDataURL(qrCode);
-
         res.status(201).json({
           success: true,
-          message: 'Đặt chỗ thành công',
+          message: 'Đặt chỗ thành công. Chỗ của bạn sẽ được giữ trong 5 phút, vui lòng xác nhận và thanh toán.',
           data: {
             bookingId,
             bookingDetails,
@@ -412,7 +426,126 @@ const bookingController = {
         error: error.message
       });
     }
+  },
+
+  // Check-in booking (ghi vào bảng check_in_out)
+  async checkInBooking(req, res) {
+    try {
+      const { bookingId } = req.body;
+      const booking = await Booking.findById(bookingId);
+      if (!booking) {
+        return res.status(404).json({ success: false, message: 'Không tìm thấy booking' });
+      }
+      if (booking.status !== 'booked' && booking.status !== 'pending') {
+        return res.status(400).json({ success: false, message: 'Booking không hợp lệ để check-in' });
+      }
+      await Booking.updateStatus(bookingId, 'checked_in');
+      await db.query('UPDATE Slots SET status = ? WHERE slot_id = ?', ['occupied', booking.slot_id]);
+      await db.query('UPDATE Bookings SET checkin_time = NOW() WHERE booking_id = ?', [bookingId]);
+      // Ghi vào bảng check_in_out
+      await db.query('INSERT INTO check_in_out (booking_id, check_in_time) VALUES (?, NOW())', [bookingId]);
+      res.json({ success: true, message: 'Check-in thành công' });
+    } catch (error) {
+      res.status(500).json({ success: false, message: 'Lỗi check-in', error: error.message });
+    }
+  },
+
+  // Check-out booking (ghi vào bảng check_in_out)
+  async checkOutBooking(req, res) {
+    try {
+      const { bookingId } = req.body;
+      const booking = await Booking.findById(bookingId);
+      if (!booking) {
+        return res.status(404).json({ success: false, message: 'Không tìm thấy booking' });
+      }
+      if (booking.status !== 'checked_in') {
+        return res.status(400).json({ success: false, message: 'Booking chưa check-in hoặc đã check-out' });
+      }
+      await Booking.updateStatus(bookingId, 'completed');
+      await db.query('UPDATE Slots SET status = ? WHERE slot_id = ?', ['available', booking.slot_id]);
+      await db.query('UPDATE Bookings SET checkout_time = NOW() WHERE booking_id = ?', [bookingId]);
+      // Cập nhật check_out_time vào bảng check_in_out
+      await db.query('UPDATE check_in_out SET check_out_time = NOW() WHERE booking_id = ? AND check_out_time IS NULL', [bookingId]);
+      res.json({ success: true, message: 'Check-out thành công' });
+    } catch (error) {
+      res.status(500).json({ success: false, message: 'Lỗi check-out', error: error.message });
+    }
+  },
+
+  // Lấy hóa đơn và mã QR sau khi thanh toán thành công
+  async getInvoiceAndQRCode(req, res) {
+    try {
+      const { bookingId } = req.body;
+      // Lấy thông tin booking
+      const booking = await Booking.findById(bookingId);
+      if (!booking) {
+        return res.status(404).json({ success: false, message: 'Không tìm thấy booking' });
+      }
+      // Kiểm tra trạng thái thanh toán
+      const [payments] = await db.query('SELECT * FROM Payments WHERE booking_id = ? AND payment_status = "completed"', [bookingId]);
+      if (!payments.length) {
+        return res.status(400).json({ success: false, message: 'Chưa thanh toán thành công' });
+      }
+      // Lấy mã QR đã tạo khi booking
+      const qrCode = booking.qr_code;
+      const qrCodeImage = await QRCode.toDataURL(qrCode);
+      res.json({
+        success: true,
+        message: 'Thanh toán thành công, đây là mã QR để check-in/check-out',
+        data: {
+          bookingId,
+          qrCode: qrCodeImage
+        }
+      });
+    } catch (error) {
+      res.status(500).json({ success: false, message: 'Lỗi lấy mã QR', error: error.message });
+    }
+  },
+
+  // Lấy hóa đơn và mã QR bằng bookingId (GET)
+  async getInvoiceById(req, res) {
+    try {
+      const { bookingId } = req.params;
+      // Lấy thông tin booking
+      const booking = await Booking.findById(bookingId);
+      if (!booking) {
+        return res.status(404).json({ success: false, message: 'Không tìm thấy booking' });
+      }
+      // Kiểm tra trạng thái thanh toán
+      const [payments] = await db.query('SELECT * FROM Payments WHERE booking_id = ? AND payment_status = "completed"', [bookingId]);
+      if (!payments.length) {
+        return res.status(400).json({ success: false, message: 'Chưa thanh toán thành công' });
+      }
+      // Lấy mã QR đã tạo khi booking
+      const qrCode = booking.qr_code;
+      const qrCodeImage = await QRCode.toDataURL(qrCode);
+      res.json({
+        success: true,
+        message: 'Thanh toán thành công, đây là mã QR để check-in/check-out',
+        data: {
+          bookingId,
+          qrCode: qrCodeImage
+        }
+      });
+    } catch (error) {
+      res.status(500).json({ success: false, message: 'Lỗi lấy mã QR', error: error.message });
+    }
+  },
+
+  // Xác nhận thanh toán
+  async confirmPayment(req, res) {
+    try {
+      const { bookingId, paymentStatus } = req.body;
+      if (!bookingId || !paymentStatus) {
+        return res.status(400).json({ success: false, message: 'Thiếu thông tin' });
+      }
+      // Cập nhật trạng thái payment
+      await db.query('UPDATE Payments SET payment_status = ? WHERE booking_id = ?', [paymentStatus, bookingId]);
+      res.json({ success: true, message: 'Cập nhật trạng thái thanh toán thành công' });
+    } catch (error) {
+      res.status(500).json({ success: false, message: 'Lỗi xác nhận thanh toán', error: error.message });
+    }
   }
 };
 
-module.exports = bookingController; 
+module.exports = bookingController;
