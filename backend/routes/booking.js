@@ -10,6 +10,9 @@ router.get('/zones', bookingController.getParkingZones);
 // Lấy thông tin chi tiết về một khu vực đỗ xe
 router.get('/zones/:zoneId', bookingController.getZoneDetails);
 
+// Lấy thông tin chi tiết về một khu vực đỗ xe với nhiều khung giờ
+router.post('/zones/:zoneId/time-slots', bookingController.getZoneDetailsMultipleTimeSlots);
+
 // Routes yêu cầu đăng nhập
 // Kiểm tra biển số xe
 router.post('/check-license-plate', authMiddleware, bookingController.checkLicensePlate);
@@ -37,5 +40,8 @@ router.post('/invoice', authMiddleware, bookingController.getInvoiceAndQRCode);
 
 // Lấy mã QR bằng bookingId
 router.get('/invoice/:bookingId', authMiddleware, bookingController.getInvoiceById);
+// Xác nhận thanh toán
+router.post('/confirm-payment', authMiddleware, bookingController.confirmPayment);
+
 
 module.exports = router;

@@ -33,8 +33,14 @@ const bookingController = {
   async getZoneDetails(req, res) {
     try {
       const { zoneId } = req.params;
-      const zoneDetails = await ParkingZone.getZoneDetails(zoneId);
+      const { startTime, endTime } = req.query; // Lấy startTime và endTime từ query parameters
 
+      // Tạo timeFilter nếu có startTime và endTime
+      const timeFilter = (startTime && endTime) ? { startTime, endTime } : null;
+
+      // Lấy thông tin zone với timeFilter
+      const zoneDetails = await ParkingZone.getZoneDetails(zoneId, timeFilter);
+      
       if (!zoneDetails) {
         return res.status(404).json({
           success: false,
@@ -55,7 +61,7 @@ const bookingController = {
       });
     }
   },
-
+  
   // Kiểm tra biển số xe
   async checkLicensePlate(req, res) {
     try {
@@ -281,6 +287,46 @@ const bookingController = {
           totalPrice = bookingDetails.price;
         }
         const paymentId = await Payment.create(bookingId, totalPrice);
+        
+        // Lấy thông tin zone
+        const [slotInfo] = await db.query(
+          `SELECT zone_id FROM Slots WHERE slot_id = ?`,
+          [slotId]
+        );
+        const zoneId = slotInfo[0].zone_id;
+        
+        // Lấy thông tin zone sau khi cập nhật
+        const [zoneInfo] = await db.query(
+          `SELECT 
+            z.zone_id as id, z.zone_name as name, 
+            z.total_slots as totalSpots, z.available_slots as availableSpots
+          FROM Zones z WHERE z.zone_id = ?`,
+          [zoneId]
+        );
+        
+        // Gửi thông báo WebSocket về booking mới
+        const wss = req.app.get('wss');
+        if (wss) {
+          wss.clients.forEach(client => {
+            if (client.readyState === 1) { // 1 = WebSocket.OPEN
+              client.send(JSON.stringify({
+                event: 'bookingCreated',
+                data: {
+                  bookingId,
+                  slotId,
+                  zoneId,
+                  zoneInfo: zoneInfo[0],
+                  status: 'pending',
+                  timeFrame: {
+                    startTime,
+                    endTime
+                  }
+                }
+              }));
+            }
+          });
+        }
+        
         // Commit transaction
         await db.query('COMMIT');
         // Tạo QR code
@@ -367,6 +413,22 @@ const bookingController = {
       }
 
       const booking = bookingCheck[0];
+      
+      // Lấy thông tin slot và zone
+      const [slotInfo] = await db.query(
+        'SELECT s.slot_id, s.zone_id FROM Slots s JOIN Bookings b ON s.slot_id = b.slot_id WHERE b.booking_id = ?',
+        [bookingId]
+      );
+      
+      if (slotInfo.length === 0) {
+        return res.status(404).json({
+          success: false,
+          message: 'Không tìm thấy thông tin slot'
+        });
+      }
+      
+      const slotId = slotInfo[0].slot_id;
+      const zoneId = slotInfo[0].zone_id;
 
       // Kiểm tra xem booking đã hoàn thành hoặc đã hủy chưa
       if (booking.status === 'completed' || booking.status === 'cancelled') {
@@ -397,6 +459,34 @@ const bookingController = {
 
       // Cập nhật trạng thái booking
       await Booking.updateStatus(bookingId, 'cancelled');
+      
+      // Cập nhật trạng thái slot về available
+      await db.query('UPDATE Slots SET status = "available" WHERE slot_id = ?', [slotId]);
+      
+      // Cập nhật số lượng chỗ trống trong zone
+      await db.query('UPDATE Zones SET available_slots = available_slots + 1 WHERE zone_id = ?', [zoneId]);
+
+      // Gửi thông báo WebSocket về booking bị hủy
+      const wss = req.app.get('wss');
+      if (wss) {
+        wss.clients.forEach(client => {
+          if (client.readyState === 1) { // 1 = WebSocket.OPEN
+            client.send(JSON.stringify({
+              event: 'bookingCancelled',
+              data: {
+                bookingId,
+                slotId,
+                zoneId,
+                status: 'available',
+                timeFrame: {
+                  startTime: booking.start_time,
+                  endTime: booking.end_time
+                }
+              }
+            }));
+          }
+        });
+      }
 
       // Kiểm tra xem đã có payment nào chưa và cập nhật
       const paymentInfo = await Payment.findByBookingId(bookingId);
@@ -409,7 +499,16 @@ const bookingController = {
         // Nếu chưa có payment và có phí hủy, tạo payment mới
         await Payment.create(bookingId, cancellationFee);
       }
-
+      
+      // Lấy thông tin zone sau khi cập nhật
+      const [zoneInfo] = await db.query(
+        `SELECT 
+          z.zone_id as id, z.zone_name as name, 
+          z.total_slots as totalSpots, z.available_slots as availableSpots
+        FROM Zones z WHERE z.zone_id = ?`,
+        [zoneId]
+      );
+      
       res.json({
         success: true,
         message: 'Hủy đặt chỗ thành công',
@@ -436,14 +535,57 @@ const bookingController = {
       if (!booking) {
         return res.status(404).json({ success: false, message: 'Không tìm thấy booking' });
       }
-      if (booking.status !== 'booked' && booking.status !== 'pending') {
+      if (booking.status !== 'confirmed' && booking.status !== 'pending') {
         return res.status(400).json({ success: false, message: 'Booking không hợp lệ để check-in' });
       }
+      
+      // Lấy thông tin slot và zone
+      const [slotInfo] = await db.query(
+        'SELECT s.slot_id, s.zone_id FROM Slots s WHERE s.slot_id = ?',
+        [booking.slot_id]
+      );
+      
+      if (slotInfo.length === 0) {
+        return res.status(404).json({ success: false, message: 'Không tìm thấy thông tin slot' });
+      }
+      
+      const slotId = slotInfo[0].slot_id;
+      const zoneId = slotInfo[0].zone_id;
+      
       await Booking.updateStatus(bookingId, 'checked_in');
       await db.query('UPDATE Slots SET status = ? WHERE slot_id = ?', ['occupied', booking.slot_id]);
       await db.query('UPDATE Bookings SET checkin_time = NOW() WHERE booking_id = ?', [bookingId]);
       // Ghi vào bảng check_in_out
       await db.query('INSERT INTO check_in_out (booking_id, check_in_time) VALUES (?, NOW())', [bookingId]);
+      
+      // Lấy thông tin zone sau khi cập nhật
+      const [zoneInfo] = await db.query(
+        `SELECT 
+          z.zone_id as id, z.zone_name as name, 
+          z.total_slots as totalSpots, z.available_slots as availableSpots
+        FROM Zones z WHERE z.zone_id = ?`,
+        [zoneId]
+      );
+      
+      // Gửi thông báo WebSocket về check-in
+      const wss = req.app.get('wss');
+      if (wss) {
+        wss.clients.forEach(client => {
+          if (client.readyState === 1) { // 1 = WebSocket.OPEN
+            client.send(JSON.stringify({
+              event: 'bookingCheckedIn',
+              data: {
+                bookingId,
+                slotId,
+                zoneId,
+                zoneInfo: zoneInfo[0],
+                status: 'checked_in'
+              }
+            }));
+          }
+        });
+      }
+      
       res.json({ success: true, message: 'Check-in thành công' });
     } catch (error) {
       res.status(500).json({ success: false, message: 'Lỗi check-in', error: error.message });
@@ -461,11 +603,57 @@ const bookingController = {
       if (booking.status !== 'checked_in') {
         return res.status(400).json({ success: false, message: 'Booking chưa check-in hoặc đã check-out' });
       }
+      
+      // Lấy thông tin slot và zone
+      const [slotInfo] = await db.query(
+        'SELECT s.slot_id, s.zone_id FROM Slots s WHERE s.slot_id = ?',
+        [booking.slot_id]
+      );
+      
+      if (slotInfo.length === 0) {
+        return res.status(404).json({ success: false, message: 'Không tìm thấy thông tin slot' });
+      }
+      
+      const slotId = slotInfo[0].slot_id;
+      const zoneId = slotInfo[0].zone_id;
+      
       await Booking.updateStatus(bookingId, 'completed');
       await db.query('UPDATE Slots SET status = ? WHERE slot_id = ?', ['available', booking.slot_id]);
       await db.query('UPDATE Bookings SET checkout_time = NOW() WHERE booking_id = ?', [bookingId]);
       // Cập nhật check_out_time vào bảng check_in_out
       await db.query('UPDATE check_in_out SET check_out_time = NOW() WHERE booking_id = ? AND check_out_time IS NULL', [bookingId]);
+      
+      // Cập nhật số lượng chỗ trống trong zone
+      await db.query('UPDATE Zones SET available_slots = available_slots + 1 WHERE zone_id = ?', [zoneId]);
+      
+      // Lấy thông tin zone sau khi cập nhật
+      const [zoneInfo] = await db.query(
+        `SELECT 
+          z.zone_id as id, z.zone_name as name, 
+          z.total_slots as totalSpots, z.available_slots as availableSpots
+        FROM Zones z WHERE z.zone_id = ?`,
+        [zoneId]
+      );
+      
+      // Gửi thông báo WebSocket về check-out
+      const wss = req.app.get('wss');
+      if (wss) {
+        wss.clients.forEach(client => {
+          if (client.readyState === 1) { // 1 = WebSocket.OPEN
+            client.send(JSON.stringify({
+              event: 'bookingCheckedOut',
+              data: {
+                bookingId,
+                slotId,
+                zoneId,
+                zoneInfo: zoneInfo[0],
+                status: 'completed'
+              }
+            }));
+          }
+        });
+      }
+      
       res.json({ success: true, message: 'Check-out thành công' });
     } catch (error) {
       res.status(500).json({ success: false, message: 'Lỗi check-out', error: error.message });
@@ -539,11 +727,194 @@ const bookingController = {
       if (!bookingId || !paymentStatus) {
         return res.status(400).json({ success: false, message: 'Thiếu thông tin' });
       }
-      // Cập nhật trạng thái payment
-      await db.query('UPDATE Payments SET payment_status = ? WHERE booking_id = ?', [paymentStatus, bookingId]);
-      res.json({ success: true, message: 'Cập nhật trạng thái thanh toán thành công' });
+
+      // Bắt đầu transaction
+      await db.query('START TRANSACTION');
+
+      try {
+        // Kiểm tra booking có tồn tại không
+        const booking = await Booking.findById(bookingId);
+        if (!booking) {
+          await db.query('ROLLBACK');
+          return res.status(404).json({ 
+            success: false, 
+            message: 'Không tìm thấy thông tin đặt chỗ' 
+          });
+        }
+
+        // Cập nhật trạng thái payment
+        await db.query('UPDATE Payments SET payment_status = ? WHERE booking_id = ?', [paymentStatus, bookingId]);
+
+        // Cập nhật trạng thái booking nếu thanh toán thành công
+        if (paymentStatus === 'completed') {
+          await Booking.updateStatus(bookingId, 'confirmed');
+        }
+
+        // Lấy thông tin booking sau khi cập nhật
+        const updatedBooking = await Booking.getBookingDetails(bookingId);
+
+        // Commit transaction
+        await db.query('COMMIT');
+
+        res.json({ 
+          success: true, 
+          message: 'Cập nhật trạng thái thanh toán thành công',
+          data: {
+            bookingId: updatedBooking.booking_id,
+            bookingStatus: updatedBooking.status,
+            paymentStatus: paymentStatus,
+            bookingDetails: {
+              startTime: updatedBooking.start_time,
+              endTime: updatedBooking.end_time,
+              bookingType: updatedBooking.booking_type,
+              totalPrice: updatedBooking.price,
+              licensePlate: updatedBooking.license_plate,
+              phoneNumber: updatedBooking.phone,
+              userName: updatedBooking.username
+            }
+          }
+        });
+      } catch (error) {
+        // Rollback nếu có lỗi
+        await db.query('ROLLBACK');
+        throw error;
+      }
     } catch (error) {
-      res.status(500).json({ success: false, message: 'Lỗi xác nhận thanh toán', error: error.message });
+      console.error('Lỗi xác nhận thanh toán:', error);
+      res.status(500).json({ 
+        success: false, 
+        message: 'Lỗi xác nhận thanh toán', 
+        error: error.message 
+      });
+    }
+  },
+
+  // Lấy thông tin chi tiết về một khu vực đỗ xe với nhiều khung giờ
+  async getZoneDetailsMultipleTimeSlots(req, res) {
+    try {
+      const { zoneId } = req.params;
+      const { date, timeSlots } = req.body;
+      
+      if (!zoneId || !date || !timeSlots || !Array.isArray(timeSlots)) {
+        return res.status(400).json({
+          success: false,
+          message: 'Thiếu thông tin cần thiết hoặc định dạng không đúng'
+        });
+      }
+
+      // Lấy thông tin cơ bản về zone
+      const [zoneData] = await db.query(`
+        SELECT z.zone_id as id, z.zone_name as name, z.total_slots as totalSpots, 
+               z.available_slots as availableSpots
+        FROM Zones z
+        WHERE z.zone_id = ?
+      `, [zoneId]);
+
+      if (zoneData.length === 0) {
+        return res.status(404).json({
+          success: false,
+          message: 'Không tìm thấy khu vực đỗ xe'
+        });
+      }
+
+      // Lấy thông tin layout
+      const [layoutData] = await db.query(`
+        SELECT layout_type, grid_rows, grid_cols, layout_data
+        FROM Zone_Layouts
+        WHERE zone_id = ?
+      `, [zoneId]);
+
+      // Lấy danh sách tất cả slot trong zone
+      const [slots] = await db.query(`
+        SELECT 
+          s.slot_id as id, 
+          s.slot_code as code, 
+          s.status as db_status, 
+          s.position_x, 
+          s.position_y
+        FROM Slots s
+        WHERE s.zone_id = ?
+      `, [zoneId]);
+
+      // Xử lý dữ liệu cho từng khung giờ
+      const time_slots = await Promise.all(timeSlots.map(async (timeSlot) => {
+        const { startTime, endTime } = timeSlot;
+        
+        // Đảm bảo startTime và endTime có ngày tháng từ tham số date
+        const fullStartTime = `${date}T${startTime}`;
+        const fullEndTime = `${date}T${endTime}`;
+        
+        // Lấy booking cho khung giờ này
+        const [bookings] = await db.query(`
+          SELECT 
+            b.booking_id,
+            b.slot_id,
+            b.start_time,
+            b.end_time,
+            b.status as booking_status
+          FROM Bookings b
+          WHERE b.slot_id IN (?)
+          AND b.status IN ('pending', 'confirmed', 'checked_in')
+          AND ((b.start_time < ? AND b.end_time > ?) OR
+               (b.start_time BETWEEN ? AND ?) OR
+               (b.end_time BETWEEN ? AND ?))
+        `, [slots.map(s => s.id), fullEndTime, fullStartTime, fullStartTime, fullEndTime, fullStartTime, fullEndTime]);
+        
+        // Xử lý trạng thái từng slot trong khung giờ này
+        const processedSlots = slots.map(slot => {
+          // Tìm booking cho slot này trong khung giờ hiện tại
+          const slotBookings = bookings.filter(b => b.slot_id === slot.id);
+          
+          // Xác định trạng thái của slot
+          let status = 'available';
+          
+          // Nếu slot có booking trong khung giờ này
+          if (slotBookings.length > 0) {
+            // Xác định trạng thái dựa trên booking
+            const booking = slotBookings[0]; // Lấy booking đầu tiên
+            if (booking.booking_status === 'checked_in') {
+              status = 'occupied';
+            } else if (booking.booking_status === 'pending') {
+              status = 'pending';
+            } else {
+              status = 'booked';
+            }
+          } else if (slot.db_status === 'occupied' || slot.db_status === 'pending') {
+            // Nếu slot đang có trạng thái đặc biệt trong database
+            status = slot.db_status;
+          }
+          
+          return {
+            id: slot.id,
+            code: slot.code,
+            status,
+            position_x: slot.position_x,
+            position_y: slot.position_y
+          };
+        });
+        
+        return {
+          time: `${startTime}-${endTime}`,
+          slots: processedSlots
+        };
+      }));
+
+      res.json({
+        success: true,
+        data: {
+          zone: zoneData[0],
+          layout: layoutData.length > 0 ? layoutData[0] : null,
+          date,
+          time_slots
+        }
+      });
+    } catch (error) {
+      console.error('Lỗi khi lấy thông tin chi tiết khu vực với nhiều khung giờ:', error);
+      res.status(500).json({
+        success: false,
+        message: 'Đã xảy ra lỗi khi lấy thông tin chi tiết khu vực',
+        error: error.message
+      });
     }
   }
 };
