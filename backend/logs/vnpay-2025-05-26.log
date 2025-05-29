@@ -1,0 +1,1754 @@
+
+[2025-05-26 09:06:04] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://f766-113-22-46-72.ngrok-free.app /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://f766-113-22-46-72.ngrok-free.app /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:08:54] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://f766-113-22-46-72.ngrok-free.app /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://f766-113-22-46-72.ngrok-free.app /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:09:41] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://f766-113-22-46-72.ngrok-free.app /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:09:48] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:09:59] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:10:17] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:10:20] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:10:40] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:10:42] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:10:49] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:10:51] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:36:48] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:46:58] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 09:53:17] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "195",
+  "amount": 180000,
+  "orderInfo": "Thanh toán đặt chỗ K08 - 2025-05-27",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 09:53:17] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "195"
+}
+
+[2025-05-26 09:53:17] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 304,
+  "bookingId": "195",
+  "amount": 180000
+}
+
+[2025-05-26 09:53:17] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 09:53:17] URL trả về được sử dụng cho VNPay:
+https://5df2-113-22-46-72.ngrok-free.app /api/payment/vnpay-return
+
+[2025-05-26 09:53:17] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526095317195",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ K08 - 2025-05-27",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "18000000",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app /api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526095317",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 09:53:17] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526095317&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+K08+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526095317195&vnp_Version=2.1.0
+
+[2025-05-26 09:53:17] Chữ ký VNPay đã tạo:
+8a37a19bf358b9f1f16c63b2e1198f903d7d1006ccee590c7e5901d52b10d6256be708cd7e34d1c76b17935562c8e172ab54439ae26500722bc03762d5b5e9dd
+
+[2025-05-26 09:53:17] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526095317&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+K08+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526095317195&vnp_Version=2.1.0&vnp_SecureHash=8a37a19bf358b9f1f16c63b2e1198f903d7d1006ccee590c7e5901d52b10d6256be708cd7e34d1c76b17935562c8e172ab54439ae26500722bc03762d5b5e9dd
+
+[2025-05-26 09:53:17] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 304,
+  "orderId": "20250526095317195",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 09:53:17] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526095317&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+K08+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526095317195&vnp_Version=2.1.0&vnp_SecureHash=8a37a19bf358b9f1f16c63b2e1198f903d7d1006ccee590c7e5901d52b10d6256be708cd7e34d1c76b17935562c8e172ab54439ae26500722bc03762d5b5e9dd"
+}
+
+[2025-05-26 09:53:56] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "196",
+  "amount": 4800000,
+  "orderInfo": "Thanh toán đặt chỗ A19 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 09:53:56] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "196"
+}
+
+[2025-05-26 09:53:56] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 306,
+  "bookingId": "196",
+  "amount": 4800000
+}
+
+[2025-05-26 09:53:56] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 09:53:56] URL trả về được sử dụng cho VNPay:
+https://5df2-113-22-46-72.ngrok-free.app /api/payment/vnpay-return
+
+[2025-05-26 09:53:56] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526095356196",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ A19 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "480000000",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app /api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526095356",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 09:53:56] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=480000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526095356&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A19+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526095356196&vnp_Version=2.1.0
+
+[2025-05-26 09:53:56] Chữ ký VNPay đã tạo:
+9fb282e7c2d2f7f59fe58d8b5ca3c791be8e5ed39e6d627713824416d486b0d366bfe4e3d07546af812586ab621682e6a1f3f515a836ed70646b4eee40771d5c
+
+[2025-05-26 09:53:56] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=480000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526095356&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A19+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526095356196&vnp_Version=2.1.0&vnp_SecureHash=9fb282e7c2d2f7f59fe58d8b5ca3c791be8e5ed39e6d627713824416d486b0d366bfe4e3d07546af812586ab621682e6a1f3f515a836ed70646b4eee40771d5c
+
+[2025-05-26 09:53:56] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 306,
+  "orderId": "20250526095356196",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 09:53:56] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=480000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526095356&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A19+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526095356196&vnp_Version=2.1.0&vnp_SecureHash=9fb282e7c2d2f7f59fe58d8b5ca3c791be8e5ed39e6d627713824416d486b0d366bfe4e3d07546af812586ab621682e6a1f3f515a836ed70646b4eee40771d5c"
+}
+
+[2025-05-26 10:13:38] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 10:14:11] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 10:14:47] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 10:50:59] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 10:52:27] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 10:52:36] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 10:58:48] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:00:03] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:01:59] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:03:49] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:07:18] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:07:57] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:09:25] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:10:14] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:17:59] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:20:25] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:26:01] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:38:43] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 11:53:06] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 12:39:06] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 12:39:06] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 12:42:51] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 13:26:26] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "215",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ A04 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 13:26:26] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "215"
+}
+
+[2025-05-26 13:26:26] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 326,
+  "bookingId": "215",
+  "amount": "0.00"
+}
+
+[2025-05-26 13:26:26] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 13:26:26] URL trả về được sử dụng cho VNPay:
+https://5df2-113-22-46-72.ngrok-free.app /api/payment/vnpay-return
+
+[2025-05-26 13:26:26] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526132626215",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ A04 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "0",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app /api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526132626",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 13:26:26] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526132626&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A04+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526132626215&vnp_Version=2.1.0
+
+[2025-05-26 13:26:26] Chữ ký VNPay đã tạo:
+5de1194c1a878ed36ff91751e91e64e42cb927ab0762e4828423cb35008538aedca38c12dd888071f95b987e5a3ad7bfb5f6fc72cc7a274c975748e0b5cd776f
+
+[2025-05-26 13:26:26] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526132626&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A04+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526132626215&vnp_Version=2.1.0&vnp_SecureHash=5de1194c1a878ed36ff91751e91e64e42cb927ab0762e4828423cb35008538aedca38c12dd888071f95b987e5a3ad7bfb5f6fc72cc7a274c975748e0b5cd776f
+
+[2025-05-26 13:26:26] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 326,
+  "orderId": "20250526132626215",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 13:26:26] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526132626&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A04+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F5df2-113-22-46-72.ngrok-free.app%20%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526132626215&vnp_Version=2.1.0&vnp_SecureHash=5de1194c1a878ed36ff91751e91e64e42cb927ab0762e4828423cb35008538aedca38c12dd888071f95b987e5a3ad7bfb5f6fc72cc7a274c975748e0b5cd776f"
+}
+
+[2025-05-26 16:50:40] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 16:52:35] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:18:57] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app  /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:18:59] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app  /api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:19:00] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app /api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:19:04] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://5df2-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:19:16] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:19:30] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:19:47] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:19:59] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:20:06] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:20:27] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:20:28] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "217",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ B10 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:20:28] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "217"
+}
+
+[2025-05-26 17:20:28] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 329,
+  "bookingId": "217",
+  "amount": "0.00"
+}
+
+[2025-05-26 17:20:28] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:20:28] URL trả về được sử dụng cho VNPay:
+https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:20:28] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526172028217",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ B10 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "0",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526172028",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:20:28] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172028&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172028217&vnp_Version=2.1.0
+
+[2025-05-26 17:20:28] Chữ ký VNPay đã tạo:
+d76c2da254fe718b5d6db84663e4aea9235047a7db421613b1e22a8544e5ad3f5b659e73dbb58fc8499be36ae33acafa0f44b9d3794fd37a7fe3cfa5e8f2c515
+
+[2025-05-26 17:20:28] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172028&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172028217&vnp_Version=2.1.0&vnp_SecureHash=d76c2da254fe718b5d6db84663e4aea9235047a7db421613b1e22a8544e5ad3f5b659e73dbb58fc8499be36ae33acafa0f44b9d3794fd37a7fe3cfa5e8f2c515
+
+[2025-05-26 17:20:28] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 329,
+  "orderId": "20250526172028217",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:20:28] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172028&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172028217&vnp_Version=2.1.0&vnp_SecureHash=d76c2da254fe718b5d6db84663e4aea9235047a7db421613b1e22a8544e5ad3f5b659e73dbb58fc8499be36ae33acafa0f44b9d3794fd37a7fe3cfa5e8f2c515"
+}
+
+[2025-05-26 17:20:51] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:21:10] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "217",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ B10 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:21:10] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "217"
+}
+
+[2025-05-26 17:21:10] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 330,
+  "bookingId": "217",
+  "amount": "0.00"
+}
+
+[2025-05-26 17:21:10] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:21:10] URL trả về được sử dụng cho VNPay:
+https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:21:10] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526172110217",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ B10 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "0",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526172110",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:21:10] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172110&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172110217&vnp_Version=2.1.0
+
+[2025-05-26 17:21:10] Chữ ký VNPay đã tạo:
+24e8709eeaa020d0a685c7cce6bf2ade570b9b21bedf3ceb8c6d2ac6576563694ed992997a6a1d10326afb7b9d28b3a724cbcff464df50f676e1f11c1fe811a8
+
+[2025-05-26 17:21:10] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172110&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172110217&vnp_Version=2.1.0&vnp_SecureHash=24e8709eeaa020d0a685c7cce6bf2ade570b9b21bedf3ceb8c6d2ac6576563694ed992997a6a1d10326afb7b9d28b3a724cbcff464df50f676e1f11c1fe811a8
+
+[2025-05-26 17:21:10] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 330,
+  "orderId": "20250526172110217",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:21:10] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172110&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172110217&vnp_Version=2.1.0&vnp_SecureHash=24e8709eeaa020d0a685c7cce6bf2ade570b9b21bedf3ceb8c6d2ac6576563694ed992997a6a1d10326afb7b9d28b3a724cbcff464df50f676e1f11c1fe811a8"
+}
+
+[2025-05-26 17:21:18] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "217",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ B10 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:21:18] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "217"
+}
+
+[2025-05-26 17:21:18] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 331,
+  "bookingId": "217",
+  "amount": "0.00"
+}
+
+[2025-05-26 17:21:18] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:21:18] URL trả về được sử dụng cho VNPay:
+https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:21:18] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526172118217",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ B10 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "0",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526172118",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:21:18] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172118&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172118217&vnp_Version=2.1.0
+
+[2025-05-26 17:21:18] Chữ ký VNPay đã tạo:
+f8a0831ebe4ad39a97f845a42b7a4b869f980cce063a44a7ea458add6f58d9f2005cbb9b705d512cfe828c2a27ccf89fbdcaada9b24ffc79b9d49632cab1da5e
+
+[2025-05-26 17:21:18] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172118&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172118217&vnp_Version=2.1.0&vnp_SecureHash=f8a0831ebe4ad39a97f845a42b7a4b869f980cce063a44a7ea458add6f58d9f2005cbb9b705d512cfe828c2a27ccf89fbdcaada9b24ffc79b9d49632cab1da5e
+
+[2025-05-26 17:21:18] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 331,
+  "orderId": "20250526172118217",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:21:18] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172118&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+B10+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172118217&vnp_Version=2.1.0&vnp_SecureHash=f8a0831ebe4ad39a97f845a42b7a4b869f980cce063a44a7ea458add6f58d9f2005cbb9b705d512cfe828c2a27ccf89fbdcaada9b24ffc79b9d49632cab1da5e"
+}
+
+[2025-05-26 17:23:15] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "218",
+  "amount": 180000,
+  "orderInfo": "Thanh toán đặt chỗ K08 - 2025-05-28",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:23:15] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "218"
+}
+
+[2025-05-26 17:23:15] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 333,
+  "bookingId": "218",
+  "amount": "0.00"
+}
+
+[2025-05-26 17:23:15] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:23:15] URL trả về được sử dụng cho VNPay:
+https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:23:15] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526172315218",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ K08 - 2025-05-28",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "0",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526172315",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:23:15] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172315&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+K08+-+2025-05-28&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172315218&vnp_Version=2.1.0
+
+[2025-05-26 17:23:15] Chữ ký VNPay đã tạo:
+cfcd78ecb65256a69a33faa6b705fabaec338eb11f9aaaaacf37d669f612facd39005c331802ac4406faf927ef35a843f5f0261a4d92c3b2b8635cd8642f72d8
+
+[2025-05-26 17:23:15] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172315&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+K08+-+2025-05-28&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172315218&vnp_Version=2.1.0&vnp_SecureHash=cfcd78ecb65256a69a33faa6b705fabaec338eb11f9aaaaacf37d669f612facd39005c331802ac4406faf927ef35a843f5f0261a4d92c3b2b8635cd8642f72d8
+
+[2025-05-26 17:23:15] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 333,
+  "orderId": "20250526172315218",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:23:15] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526172315&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+K08+-+2025-05-28&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fbbfd-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526172315218&vnp_Version=2.1.0&vnp_SecureHash=cfcd78ecb65256a69a33faa6b705fabaec338eb11f9aaaaacf37d669f612facd39005c331802ac4406faf927ef35a843f5f0261a4d92c3b2b8635cd8642f72d8"
+}
+
+[2025-05-26 17:45:48] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:47:12] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://bbfd-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:47:16] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:47:23] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:47:33] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:47:45] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:48:01] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:48:43] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "219",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:48:43] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "219"
+}
+
+[2025-05-26 17:48:43] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 335,
+  "bookingId": "219",
+  "amount": "0.00"
+}
+
+[2025-05-26 17:48:43] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:48:43] URL trả về được sử dụng cho VNPay:
+https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:48:43] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526174843219",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "0",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526174843",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:48:43] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526174843&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526174843219&vnp_Version=2.1.0
+
+[2025-05-26 17:48:43] Chữ ký VNPay đã tạo:
+fd69a656508812b2374487f75bedb055bc7bd2af2f5e3f864cd778f50ba42fb26f0b326be4d82d720a17cb5995c0cdfcac6e88aba0df734af3800d773f3d742f
+
+[2025-05-26 17:48:43] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526174843&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526174843219&vnp_Version=2.1.0&vnp_SecureHash=fd69a656508812b2374487f75bedb055bc7bd2af2f5e3f864cd778f50ba42fb26f0b326be4d82d720a17cb5995c0cdfcac6e88aba0df734af3800d773f3d742f
+
+[2025-05-26 17:48:43] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 335,
+  "orderId": "20250526174843219",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:48:43] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526174843&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526174843219&vnp_Version=2.1.0&vnp_SecureHash=fd69a656508812b2374487f75bedb055bc7bd2af2f5e3f864cd778f50ba42fb26f0b326be4d82d720a17cb5995c0cdfcac6e88aba0df734af3800d773f3d742f"
+}
+
+[2025-05-26 17:50:04] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "219",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:50:04] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "219"
+}
+
+[2025-05-26 17:50:04] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 336,
+  "bookingId": "219",
+  "amount": "0.00"
+}
+
+[2025-05-26 17:50:04] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:50:04] URL trả về được sử dụng cho VNPay:
+https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:50:04] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526175004219",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": "0",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526175004",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:50:04] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175004&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175004219&vnp_Version=2.1.0
+
+[2025-05-26 17:50:04] Chữ ký VNPay đã tạo:
+479c3f4a6b308d7a96fcbf6300af9d8a3f35c58cd3a0a91f645c107ff824910da5fcac0036224144aabef52385b9c629d9e816b3d100d761780bda63880ff1aa
+
+[2025-05-26 17:50:04] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175004&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175004219&vnp_Version=2.1.0&vnp_SecureHash=479c3f4a6b308d7a96fcbf6300af9d8a3f35c58cd3a0a91f645c107ff824910da5fcac0036224144aabef52385b9c629d9e816b3d100d761780bda63880ff1aa
+
+[2025-05-26 17:50:04] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 336,
+  "orderId": "20250526175004219",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:50:04] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=0&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175004&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175004219&vnp_Version=2.1.0&vnp_SecureHash=479c3f4a6b308d7a96fcbf6300af9d8a3f35c58cd3a0a91f645c107ff824910da5fcac0036224144aabef52385b9c629d9e816b3d100d761780bda63880ff1aa"
+}
+
+[2025-05-26 17:52:09] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:52:42] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "219",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:52:42] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "219"
+}
+
+[2025-05-26 17:52:42] Số tiền không hợp lệ
+{
+  "amount": "0.00"
+}
+
+[2025-05-26 17:52:47] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "219",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:52:47] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "219"
+}
+
+[2025-05-26 17:52:47] Số tiền không hợp lệ
+{
+  "amount": "0.00"
+}
+
+[2025-05-26 17:53:42] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:53:45] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:53:53] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "219",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:53:53] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "219"
+}
+
+[2025-05-26 17:53:53] Số tiền thanh toán:
+{
+  "requestAmount": "200000.00",
+  "bookingPrice": "0.00",
+  "finalAmount": 200000
+}
+
+[2025-05-26 17:53:53] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 337,
+  "bookingId": "219",
+  "amount": 200000
+}
+
+[2025-05-26 17:53:53] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:53:53] URL trả về được sử dụng cho VNPay:
+https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:53:53] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526175353219",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": 20000000,
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526175353",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:53:53] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=20000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175353&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175353219&vnp_Version=2.1.0
+
+[2025-05-26 17:53:53] Chữ ký VNPay đã tạo:
+c2e3d59e1cfbabb64086b6cc80d376cc393f7b85e8cdb71b672ed1c1b08fc3079df47c5ea9397582ec3fcd87461a3e28568864232d159135dbb4bb5529924446
+
+[2025-05-26 17:53:53] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=20000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175353&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175353219&vnp_Version=2.1.0&vnp_SecureHash=c2e3d59e1cfbabb64086b6cc80d376cc393f7b85e8cdb71b672ed1c1b08fc3079df47c5ea9397582ec3fcd87461a3e28568864232d159135dbb4bb5529924446
+
+[2025-05-26 17:53:53] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 337,
+  "orderId": "20250526175353219",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:53:53] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=20000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175353&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175353219&vnp_Version=2.1.0&vnp_SecureHash=c2e3d59e1cfbabb64086b6cc80d376cc393f7b85e8cdb71b672ed1c1b08fc3079df47c5ea9397582ec3fcd87461a3e28568864232d159135dbb4bb5529924446"
+}
+
+[2025-05-26 17:54:01] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 17:58:14] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "219",
+  "amount": "200000.00",
+  "orderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:58:14] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "219"
+}
+
+[2025-05-26 17:58:14] Số tiền thanh toán:
+{
+  "requestAmount": "200000.00",
+  "bookingPrice": "0.00",
+  "finalAmount": 200000
+}
+
+[2025-05-26 17:58:14] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 338,
+  "bookingId": "219",
+  "amount": 200000
+}
+
+[2025-05-26 17:58:14] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:58:14] URL trả về được sử dụng cho VNPay:
+https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 17:58:14] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526175814219",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": 20000000,
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526175814",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 17:58:14] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=20000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175814&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175814219&vnp_Version=2.1.0
+
+[2025-05-26 17:58:14] Chữ ký VNPay đã tạo:
+fd7faa7693f871f0e4d15133dcf8643d1313bfe24308489c94bf092ee60a909a0bf3d3f12ff7184be27b5cc464512867dd20a47a2dfea89b31c42c95d9b76d7a
+
+[2025-05-26 17:58:14] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=20000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175814&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175814219&vnp_Version=2.1.0&vnp_SecureHash=fd7faa7693f871f0e4d15133dcf8643d1313bfe24308489c94bf092ee60a909a0bf3d3f12ff7184be27b5cc464512867dd20a47a2dfea89b31c42c95d9b76d7a
+
+[2025-05-26 17:58:14] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 338,
+  "orderId": "20250526175814219",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 17:58:14] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=20000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526175814&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526175814219&vnp_Version=2.1.0&vnp_SecureHash=fd7faa7693f871f0e4d15133dcf8643d1313bfe24308489c94bf092ee60a909a0bf3d3f12ff7184be27b5cc464512867dd20a47a2dfea89b31c42c95d9b76d7a"
+}
+
+[2025-05-26 17:58:51] === XỬ LÝ CALLBACK TRẢ VỀ TỪ VNPAY ===
+{
+  "query": {
+    "vnp_Amount": "20000000",
+    "vnp_BankCode": "NCB",
+    "vnp_BankTranNo": "VNP14980386",
+    "vnp_CardType": "ATM",
+    "vnp_OrderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+    "vnp_PayDate": "20250526175915",
+    "vnp_ResponseCode": "00",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_TransactionNo": "14980386",
+    "vnp_TransactionStatus": "00",
+    "vnp_TxnRef": "20250526175814219",
+    "vnp_SecureHash": "ca0e3526571338597681570e9cc57ee6e4ec1891d47ec5b439df427c50fd576f28603b3bcec394ac18c35bcf0192df53924c7e3658dc5c60bb676fe912cec842"
+  },
+  "ip": "::1"
+}
+
+[2025-05-26 17:58:51] Tham số trả về:
+{
+  "vnp_Amount": "20000000",
+  "vnp_BankCode": "NCB",
+  "vnp_BankTranNo": "VNP14980386",
+  "vnp_CardType": "ATM",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ C23 - 2025-05-26",
+  "vnp_PayDate": "20250526175915",
+  "vnp_ResponseCode": "00",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_TransactionNo": "14980386",
+  "vnp_TransactionStatus": "00",
+  "vnp_TxnRef": "20250526175814219",
+  "vnp_SecureHash": "ca0e3526571338597681570e9cc57ee6e4ec1891d47ec5b439df427c50fd576f28603b3bcec394ac18c35bcf0192df53924c7e3658dc5c60bb676fe912cec842"
+}
+
+[2025-05-26 17:58:51] Xác minh trả về:
+{
+  "receivedHash": "ca0e3526571338597681570e9cc57ee6e4ec1891d47ec5b439df427c50fd576f28603b3bcec394ac18c35bcf0192df53924c7e3658dc5c60bb676fe912cec842",
+  "calculatedHash": "ca0e3526571338597681570e9cc57ee6e4ec1891d47ec5b439df427c50fd576f28603b3bcec394ac18c35bcf0192df53924c7e3658dc5c60bb676fe912cec842",
+  "queryString": "vnp_Amount=20000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP14980386&vnp_CardType=ATM&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C23+-+2025-05-26&vnp_PayDate=20250526175915&vnp_ResponseCode=00&vnp_TmnCode=BXG8SRK8&vnp_TransactionNo=14980386&vnp_TransactionStatus=00&vnp_TxnRef=20250526175814219"
+}
+
+[2025-05-26 17:58:51] Thanh toán thành công
+{
+  "orderId": "20250526175814219",
+  "amount": 200000
+}
+
+[2025-05-26 17:58:52] Đã cập nhật cơ sở dữ liệu cho thanh toán thành công
+{
+  "paymentId": 338,
+  "bookingId": 219
+}
+
+[2025-05-26 17:58:52] Tìm thấy URL trả về cho ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 17:58:52] Chuyển hướng đến trang web (áp dụng cho tất cả thiết bị):
+https://1782-113-22-46-72.ngrok-free.app/api/payment/result?status=success&message=Thanh%20to%C3%A1n%20th%C3%A0nh%20c%C3%B4ng&amount=200000
+
+[2025-05-26 18:25:36] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:32:36] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:37:11] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:37:51] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:38:44] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:40:13] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:40:21] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:40:23] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:40:49] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:41:09] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 18:41:10] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 19:04:48] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 19:09:37] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 19:15:35] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 19:15:36] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 19:16:03] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 19:16:08] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 21:45:32] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 22:12:57] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 22:58:50] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 22:58:58] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:04:13] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:04:14] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:04:20] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:23:22] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:24:49] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:25:02] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:25:04] VNPay Configuration:
+{
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_HashSecret": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV",
+  "vnp_Url": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html",
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-ipn"
+}
+
+[2025-05-26 23:25:29] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "238",
+  "amount": 180000,
+  "orderInfo": "Thanh toán đặt chỗ C13 - 2025-05-27",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 23:25:29] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "238"
+}
+
+[2025-05-26 23:25:29] Số tiền thanh toán:
+{
+  "requestAmount": 180000,
+  "bookingPrice": "0.00",
+  "finalAmount": 180000
+}
+
+[2025-05-26 23:25:29] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 358,
+  "bookingId": "238",
+  "amount": 180000
+}
+
+[2025-05-26 23:25:29] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 23:25:29] URL trả về được sử dụng cho VNPay:
+https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 23:25:29] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526232529238",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ C13 - 2025-05-27",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": 18000000,
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526232529",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 23:25:29] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526232529&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C13+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526232529238&vnp_Version=2.1.0
+
+[2025-05-26 23:25:29] Chữ ký VNPay đã tạo:
+ea14d889a3db4aaa98d768c9d4b2fa6fbf622e20602f0a588242aeda900594aae17e9028b95a557a2fe054508bff04718174b28fadc4b66e93d0c68871c14093
+
+[2025-05-26 23:25:29] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526232529&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C13+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526232529238&vnp_Version=2.1.0&vnp_SecureHash=ea14d889a3db4aaa98d768c9d4b2fa6fbf622e20602f0a588242aeda900594aae17e9028b95a557a2fe054508bff04718174b28fadc4b66e93d0c68871c14093
+
+[2025-05-26 23:25:29] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 358,
+  "orderId": "20250526232529238",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 23:25:29] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526232529&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+C13+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526232529238&vnp_Version=2.1.0&vnp_SecureHash=ea14d889a3db4aaa98d768c9d4b2fa6fbf622e20602f0a588242aeda900594aae17e9028b95a557a2fe054508bff04718174b28fadc4b66e93d0c68871c14093"
+}
+
+[2025-05-26 23:52:59] === YÊU CẦU TẠO THANH TOÁN VNPAY ===
+{
+  "bookingId": "241",
+  "amount": 180000,
+  "orderInfo": "Thanh toán đặt chỗ A19 - 2025-05-27",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 23:52:59] Kết quả kiểm tra đặt chỗ:
+{
+  "found": true,
+  "bookingId": "241"
+}
+
+[2025-05-26 23:52:59] Số tiền thanh toán:
+{
+  "requestAmount": 180000,
+  "bookingPrice": "0.00",
+  "finalAmount": 180000
+}
+
+[2025-05-26 23:52:59] Đã tạo bản ghi thanh toán:
+{
+  "paymentId": 362,
+  "bookingId": "241",
+  "amount": 180000
+}
+
+[2025-05-26 23:52:59] Phát hiện URL trả về từ ứng dụng di động:
+parkingapp://payment-result
+
+[2025-05-26 23:52:59] URL trả về được sử dụng cho VNPay:
+https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return
+
+[2025-05-26 23:52:59] Tham số gốc VNPay:
+{
+  "vnp_Version": "2.1.0",
+  "vnp_Command": "pay",
+  "vnp_TmnCode": "BXG8SRK8",
+  "vnp_Locale": "vn",
+  "vnp_CurrCode": "VND",
+  "vnp_TxnRef": "20250526235259241",
+  "vnp_OrderInfo": "Thanh toán đặt chỗ A19 - 2025-05-27",
+  "vnp_OrderType": "billpayment",
+  "vnp_Amount": 18000000,
+  "vnp_ReturnUrl": "https://1782-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+  "vnp_IpAddr": "192.168.0.101",
+  "vnp_CreateDate": "20250526235259",
+  "vnp_BankCode": "NCB"
+}
+
+[2025-05-26 23:52:59] Chuỗi dữ liệu signData VNPay:
+vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526235259&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A19+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526235259241&vnp_Version=2.1.0
+
+[2025-05-26 23:52:59] Chữ ký VNPay đã tạo:
+55fda699b05181c7891edf2d44ec46c07496c1c462a68998565e9d8331a624a9f1481cdb8f18b4d64438bdd589f6b7c6aef319d44dfe5cfa5d6c843665999089
+
+[2025-05-26 23:52:59] URL thanh toán VNPay:
+https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526235259&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A19+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526235259241&vnp_Version=2.1.0&vnp_SecureHash=55fda699b05181c7891edf2d44ec46c07496c1c462a68998565e9d8331a624a9f1481cdb8f18b4d64438bdd589f6b7c6aef319d44dfe5cfa5d6c843665999089
+
+[2025-05-26 23:52:59] Cập nhật bản ghi thanh toán với reference_id:
+{
+  "paymentId": 362,
+  "orderId": "20250526235259241",
+  "returnUrl": "parkingapp://payment-result"
+}
+
+[2025-05-26 23:52:59] === TẠO THANH TOÁN VNPAY THÀNH CÔNG ===
+{
+  "paymentUrl": "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html?vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250526235259&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A19+-+2025-05-27&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2F1782-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250526235259241&vnp_Version=2.1.0&vnp_SecureHash=55fda699b05181c7891edf2d44ec46c07496c1c462a68998565e9d8331a624a9f1481cdb8f18b4d64438bdd589f6b7c6aef319d44dfe5cfa5d6c843665999089"
+}

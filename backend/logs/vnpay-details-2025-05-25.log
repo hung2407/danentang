@@ -1,0 +1,276 @@
+
+=== 2025-05-25 10:21:08 - Chi tiết tạo chữ ký VNPay ===
+rawParams: {"vnp_Version":"2.1.0","vnp_Command":"pay","vnp_TmnCode":"BXG8SRK8","vnp_Locale":"vn","vnp_CurrCode":"VND","vnp_TxnRef":"20250525102108186","vnp_OrderInfo":"Thanh toán đặt chỗ A10 - 2025-05-25","vnp_OrderType":"billpayment","vnp_Amount":"480000000","vnp_ReturnUrl":"https://a003-58-187-175-129.ngrok-free.app/api/payment/vnpay-return","vnp_IpAddr":"192.168.1.101","vnp_CreateDate":"20250525102108","vnp_BankCode":"NCB"}
+Raw JSON: {
+  "rawParams": {
+    "vnp_Version": "2.1.0",
+    "vnp_Command": "pay",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_Locale": "vn",
+    "vnp_CurrCode": "VND",
+    "vnp_TxnRef": "20250525102108186",
+    "vnp_OrderInfo": "Thanh toán đặt chỗ A10 - 2025-05-25",
+    "vnp_OrderType": "billpayment",
+    "vnp_Amount": "480000000",
+    "vnp_ReturnUrl": "https://a003-58-187-175-129.ngrok-free.app/api/payment/vnpay-return",
+    "vnp_IpAddr": "192.168.1.101",
+    "vnp_CreateDate": "20250525102108",
+    "vnp_BankCode": "NCB"
+  }
+}
+
+=== 2025-05-25 10:21:08 - Chi tiết tạo chữ ký VNPay ===
+sortedParams: {"vnp_Amount":"480000000","vnp_BankCode":"NCB","vnp_Command":"pay","vnp_CreateDate":"20250525102108","vnp_CurrCode":"VND","vnp_IpAddr":"192.168.1.101","vnp_Locale":"vn","vnp_OrderInfo":"Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A10+-+2025-05-25","vnp_OrderType":"billpayment","vnp_ReturnUrl":"https%3A%2F%2Fa003-58-187-175-129.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return","vnp_TmnCode":"BXG8SRK8","vnp_TxnRef":"20250525102108186","vnp_Version":"2.1.0"}
+Raw JSON: {
+  "sortedParams": {
+    "vnp_Amount": "480000000",
+    "vnp_BankCode": "NCB",
+    "vnp_Command": "pay",
+    "vnp_CreateDate": "20250525102108",
+    "vnp_CurrCode": "VND",
+    "vnp_IpAddr": "192.168.1.101",
+    "vnp_Locale": "vn",
+    "vnp_OrderInfo": "Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A10+-+2025-05-25",
+    "vnp_OrderType": "billpayment",
+    "vnp_ReturnUrl": "https%3A%2F%2Fa003-58-187-175-129.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_TxnRef": "20250525102108186",
+    "vnp_Version": "2.1.0"
+  }
+}
+
+=== 2025-05-25 10:21:08 - Chi tiết tạo chữ ký VNPay ===
+signData: "vnp_Amount=480000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525102108&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A10+-+2025-05-25&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fa003-58-187-175-129.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525102108186&vnp_Version=2.1.0"
+secretKey: "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+Raw JSON: {
+  "signData": "vnp_Amount=480000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525102108&vnp_CurrCode=VND&vnp_IpAddr=192.168.1.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A10+-+2025-05-25&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Fa003-58-187-175-129.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525102108186&vnp_Version=2.1.0",
+  "secretKey": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+}
+
+=== 2025-05-25 10:21:08 - Chi tiết tạo chữ ký VNPay ===
+signatureHex: "a1ecb0d17d8be94778e62710a95e0552cf81aa64c59886e0432572cfec0b592de318a89d1e71379e5969d10f7744ec50c4a31a762983bae5551b597e74afc4b0"
+hmacAlgorithm: "sha512"
+Raw JSON: {
+  "signatureHex": "a1ecb0d17d8be94778e62710a95e0552cf81aa64c59886e0432572cfec0b592de318a89d1e71379e5969d10f7744ec50c4a31a762983bae5551b597e74afc4b0",
+  "hmacAlgorithm": "sha512"
+}
+
+=== 2025-05-25 22:31:23 - Chi tiết tạo chữ ký VNPay ===
+rawParams: {"vnp_Version":"2.1.0","vnp_Command":"pay","vnp_TmnCode":"BXG8SRK8","vnp_Locale":"vn","vnp_CurrCode":"VND","vnp_TxnRef":"20250525223123187","vnp_OrderInfo":"Thanh toán đặt chỗ A25 - 2025-05-25","vnp_OrderType":"billpayment","vnp_Amount":"480000000","vnp_ReturnUrl":"https://f766-113-22-46-72.ngrok-free.app/api/payment/vnpay-return","vnp_IpAddr":"192.168.0.101","vnp_CreateDate":"20250525223123","vnp_BankCode":"NCB"}
+Raw JSON: {
+  "rawParams": {
+    "vnp_Version": "2.1.0",
+    "vnp_Command": "pay",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_Locale": "vn",
+    "vnp_CurrCode": "VND",
+    "vnp_TxnRef": "20250525223123187",
+    "vnp_OrderInfo": "Thanh toán đặt chỗ A25 - 2025-05-25",
+    "vnp_OrderType": "billpayment",
+    "vnp_Amount": "480000000",
+    "vnp_ReturnUrl": "https://f766-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+    "vnp_IpAddr": "192.168.0.101",
+    "vnp_CreateDate": "20250525223123",
+    "vnp_BankCode": "NCB"
+  }
+}
+
+=== 2025-05-25 22:31:23 - Chi tiết tạo chữ ký VNPay ===
+sortedParams: {"vnp_Amount":"480000000","vnp_BankCode":"NCB","vnp_Command":"pay","vnp_CreateDate":"20250525223123","vnp_CurrCode":"VND","vnp_IpAddr":"192.168.0.101","vnp_Locale":"vn","vnp_OrderInfo":"Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25","vnp_OrderType":"billpayment","vnp_ReturnUrl":"https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return","vnp_TmnCode":"BXG8SRK8","vnp_TxnRef":"20250525223123187","vnp_Version":"2.1.0"}
+Raw JSON: {
+  "sortedParams": {
+    "vnp_Amount": "480000000",
+    "vnp_BankCode": "NCB",
+    "vnp_Command": "pay",
+    "vnp_CreateDate": "20250525223123",
+    "vnp_CurrCode": "VND",
+    "vnp_IpAddr": "192.168.0.101",
+    "vnp_Locale": "vn",
+    "vnp_OrderInfo": "Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25",
+    "vnp_OrderType": "billpayment",
+    "vnp_ReturnUrl": "https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_TxnRef": "20250525223123187",
+    "vnp_Version": "2.1.0"
+  }
+}
+
+=== 2025-05-25 22:31:23 - Chi tiết tạo chữ ký VNPay ===
+signData: "vnp_Amount=480000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525223123&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525223123187&vnp_Version=2.1.0"
+secretKey: "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+Raw JSON: {
+  "signData": "vnp_Amount=480000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525223123&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525223123187&vnp_Version=2.1.0",
+  "secretKey": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+}
+
+=== 2025-05-25 22:31:23 - Chi tiết tạo chữ ký VNPay ===
+signatureHex: "8d09ba71ebf888f91ea3d8cc8a888309c0768526744fd549b6cb4f2f6456812147faa5437108b0e988c0de40de970cc6de59567c14cea51d9096fa076568e67e"
+hmacAlgorithm: "sha512"
+Raw JSON: {
+  "signatureHex": "8d09ba71ebf888f91ea3d8cc8a888309c0768526744fd549b6cb4f2f6456812147faa5437108b0e988c0de40de970cc6de59567c14cea51d9096fa076568e67e",
+  "hmacAlgorithm": "sha512"
+}
+
+=== 2025-05-25 22:32:42 - Chi tiết tạo chữ ký VNPay ===
+rawParams: {"vnp_Amount":"480000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14978668","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toán đặt chỗ A25 - 2025-05-25","vnp_PayDate":"20250525223305","vnp_ResponseCode":"00","vnp_TmnCode":"BXG8SRK8","vnp_TransactionNo":"14978668","vnp_TransactionStatus":"00","vnp_TxnRef":"20250525223123187"}
+Raw JSON: {
+  "rawParams": {
+    "vnp_Amount": "480000000",
+    "vnp_BankCode": "NCB",
+    "vnp_BankTranNo": "VNP14978668",
+    "vnp_CardType": "ATM",
+    "vnp_OrderInfo": "Thanh toán đặt chỗ A25 - 2025-05-25",
+    "vnp_PayDate": "20250525223305",
+    "vnp_ResponseCode": "00",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_TransactionNo": "14978668",
+    "vnp_TransactionStatus": "00",
+    "vnp_TxnRef": "20250525223123187"
+  }
+}
+
+=== 2025-05-25 22:32:42 - Chi tiết tạo chữ ký VNPay ===
+sortedParams: {"vnp_Amount":"480000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14978668","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25","vnp_PayDate":"20250525223305","vnp_ResponseCode":"00","vnp_TmnCode":"BXG8SRK8","vnp_TransactionNo":"14978668","vnp_TransactionStatus":"00","vnp_TxnRef":"20250525223123187"}
+Raw JSON: {
+  "sortedParams": {
+    "vnp_Amount": "480000000",
+    "vnp_BankCode": "NCB",
+    "vnp_BankTranNo": "VNP14978668",
+    "vnp_CardType": "ATM",
+    "vnp_OrderInfo": "Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25",
+    "vnp_PayDate": "20250525223305",
+    "vnp_ResponseCode": "00",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_TransactionNo": "14978668",
+    "vnp_TransactionStatus": "00",
+    "vnp_TxnRef": "20250525223123187"
+  }
+}
+
+=== 2025-05-25 22:32:42 - Chi tiết tạo chữ ký VNPay ===
+signData: "vnp_Amount=480000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP14978668&vnp_CardType=ATM&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25&vnp_PayDate=20250525223305&vnp_ResponseCode=00&vnp_TmnCode=BXG8SRK8&vnp_TransactionNo=14978668&vnp_TransactionStatus=00&vnp_TxnRef=20250525223123187"
+secretKey: "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+Raw JSON: {
+  "signData": "vnp_Amount=480000000&vnp_BankCode=NCB&vnp_BankTranNo=VNP14978668&vnp_CardType=ATM&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A25+-+2025-05-25&vnp_PayDate=20250525223305&vnp_ResponseCode=00&vnp_TmnCode=BXG8SRK8&vnp_TransactionNo=14978668&vnp_TransactionStatus=00&vnp_TxnRef=20250525223123187",
+  "secretKey": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+}
+
+=== 2025-05-25 22:32:42 - Chi tiết tạo chữ ký VNPay ===
+signatureHex: "8719047652f09068928cfab5a70b846004fa8dbc01d71ece25fa8e8b2fc0fe9ae19110ecc8b90b361a83eeb8b7e9ce9d6703913b3fef8fc30c4e417509cb17c3"
+hmacAlgorithm: "sha512"
+Raw JSON: {
+  "signatureHex": "8719047652f09068928cfab5a70b846004fa8dbc01d71ece25fa8e8b2fc0fe9ae19110ecc8b90b361a83eeb8b7e9ce9d6703913b3fef8fc30c4e417509cb17c3",
+  "hmacAlgorithm": "sha512"
+}
+
+=== 2025-05-25 23:20:25 - Chi tiết tạo chữ ký VNPay ===
+rawParams: {"vnp_Version":"2.1.0","vnp_Command":"pay","vnp_TmnCode":"BXG8SRK8","vnp_Locale":"vn","vnp_CurrCode":"VND","vnp_TxnRef":"20250525232025188","vnp_OrderInfo":"Thanh toán đặt chỗ A14 - 2025-05-29","vnp_OrderType":"billpayment","vnp_Amount":"18000000","vnp_ReturnUrl":"https://f766-113-22-46-72.ngrok-free.app/api/payment/vnpay-return","vnp_IpAddr":"192.168.0.101","vnp_CreateDate":"20250525232025","vnp_BankCode":"NCB"}
+Raw JSON: {
+  "rawParams": {
+    "vnp_Version": "2.1.0",
+    "vnp_Command": "pay",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_Locale": "vn",
+    "vnp_CurrCode": "VND",
+    "vnp_TxnRef": "20250525232025188",
+    "vnp_OrderInfo": "Thanh toán đặt chỗ A14 - 2025-05-29",
+    "vnp_OrderType": "billpayment",
+    "vnp_Amount": "18000000",
+    "vnp_ReturnUrl": "https://f766-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+    "vnp_IpAddr": "192.168.0.101",
+    "vnp_CreateDate": "20250525232025",
+    "vnp_BankCode": "NCB"
+  }
+}
+
+=== 2025-05-25 23:20:25 - Chi tiết tạo chữ ký VNPay ===
+sortedParams: {"vnp_Amount":"18000000","vnp_BankCode":"NCB","vnp_Command":"pay","vnp_CreateDate":"20250525232025","vnp_CurrCode":"VND","vnp_IpAddr":"192.168.0.101","vnp_Locale":"vn","vnp_OrderInfo":"Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29","vnp_OrderType":"billpayment","vnp_ReturnUrl":"https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return","vnp_TmnCode":"BXG8SRK8","vnp_TxnRef":"20250525232025188","vnp_Version":"2.1.0"}
+Raw JSON: {
+  "sortedParams": {
+    "vnp_Amount": "18000000",
+    "vnp_BankCode": "NCB",
+    "vnp_Command": "pay",
+    "vnp_CreateDate": "20250525232025",
+    "vnp_CurrCode": "VND",
+    "vnp_IpAddr": "192.168.0.101",
+    "vnp_Locale": "vn",
+    "vnp_OrderInfo": "Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29",
+    "vnp_OrderType": "billpayment",
+    "vnp_ReturnUrl": "https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_TxnRef": "20250525232025188",
+    "vnp_Version": "2.1.0"
+  }
+}
+
+=== 2025-05-25 23:20:25 - Chi tiết tạo chữ ký VNPay ===
+signData: "vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525232025&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525232025188&vnp_Version=2.1.0"
+secretKey: "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+Raw JSON: {
+  "signData": "vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525232025&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525232025188&vnp_Version=2.1.0",
+  "secretKey": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+}
+
+=== 2025-05-25 23:20:25 - Chi tiết tạo chữ ký VNPay ===
+signatureHex: "228ced2f05e71fcf952d32a450807f7bb6b27be5a0f0a653f14734ec92d13899927ac98a7c3d154ed66580d0b0c9e856c74f9f424349ffeacbc3d000c2ba011e"
+hmacAlgorithm: "sha512"
+Raw JSON: {
+  "signatureHex": "228ced2f05e71fcf952d32a450807f7bb6b27be5a0f0a653f14734ec92d13899927ac98a7c3d154ed66580d0b0c9e856c74f9f424349ffeacbc3d000c2ba011e",
+  "hmacAlgorithm": "sha512"
+}
+
+=== 2025-05-25 23:20:35 - Chi tiết tạo chữ ký VNPay ===
+rawParams: {"vnp_Version":"2.1.0","vnp_Command":"pay","vnp_TmnCode":"BXG8SRK8","vnp_Locale":"vn","vnp_CurrCode":"VND","vnp_TxnRef":"20250525232035188","vnp_OrderInfo":"Thanh toán đặt chỗ A14 - 2025-05-29","vnp_OrderType":"billpayment","vnp_Amount":"18000000","vnp_ReturnUrl":"https://f766-113-22-46-72.ngrok-free.app/api/payment/vnpay-return","vnp_IpAddr":"192.168.0.101","vnp_CreateDate":"20250525232035","vnp_BankCode":"NCB"}
+Raw JSON: {
+  "rawParams": {
+    "vnp_Version": "2.1.0",
+    "vnp_Command": "pay",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_Locale": "vn",
+    "vnp_CurrCode": "VND",
+    "vnp_TxnRef": "20250525232035188",
+    "vnp_OrderInfo": "Thanh toán đặt chỗ A14 - 2025-05-29",
+    "vnp_OrderType": "billpayment",
+    "vnp_Amount": "18000000",
+    "vnp_ReturnUrl": "https://f766-113-22-46-72.ngrok-free.app/api/payment/vnpay-return",
+    "vnp_IpAddr": "192.168.0.101",
+    "vnp_CreateDate": "20250525232035",
+    "vnp_BankCode": "NCB"
+  }
+}
+
+=== 2025-05-25 23:20:35 - Chi tiết tạo chữ ký VNPay ===
+sortedParams: {"vnp_Amount":"18000000","vnp_BankCode":"NCB","vnp_Command":"pay","vnp_CreateDate":"20250525232035","vnp_CurrCode":"VND","vnp_IpAddr":"192.168.0.101","vnp_Locale":"vn","vnp_OrderInfo":"Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29","vnp_OrderType":"billpayment","vnp_ReturnUrl":"https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return","vnp_TmnCode":"BXG8SRK8","vnp_TxnRef":"20250525232035188","vnp_Version":"2.1.0"}
+Raw JSON: {
+  "sortedParams": {
+    "vnp_Amount": "18000000",
+    "vnp_BankCode": "NCB",
+    "vnp_Command": "pay",
+    "vnp_CreateDate": "20250525232035",
+    "vnp_CurrCode": "VND",
+    "vnp_IpAddr": "192.168.0.101",
+    "vnp_Locale": "vn",
+    "vnp_OrderInfo": "Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29",
+    "vnp_OrderType": "billpayment",
+    "vnp_ReturnUrl": "https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return",
+    "vnp_TmnCode": "BXG8SRK8",
+    "vnp_TxnRef": "20250525232035188",
+    "vnp_Version": "2.1.0"
+  }
+}
+
+=== 2025-05-25 23:20:35 - Chi tiết tạo chữ ký VNPay ===
+signData: "vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525232035&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525232035188&vnp_Version=2.1.0"
+secretKey: "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+Raw JSON: {
+  "signData": "vnp_Amount=18000000&vnp_BankCode=NCB&vnp_Command=pay&vnp_CreateDate=20250525232035&vnp_CurrCode=VND&vnp_IpAddr=192.168.0.101&vnp_Locale=vn&vnp_OrderInfo=Thanh+to%C3%A1n+%C4%91%E1%BA%B7t+ch%E1%BB%97+A14+-+2025-05-29&vnp_OrderType=billpayment&vnp_ReturnUrl=https%3A%2F%2Ff766-113-22-46-72.ngrok-free.app%2Fapi%2Fpayment%2Fvnpay-return&vnp_TmnCode=BXG8SRK8&vnp_TxnRef=20250525232035188&vnp_Version=2.1.0",
+  "secretKey": "CCO21KBSH3AZNGQAQO7YT9K1V0X88NEV"
+}
+
+=== 2025-05-25 23:20:35 - Chi tiết tạo chữ ký VNPay ===
+signatureHex: "3d37db13b20ecc4d804a1049676265b5ef5cdb6f5fb69275cbb4c8d079127c4b6c96190d8cdbe02154e82cd76ad6c241179f4ff2b1f6032cfb852c6d25c1bb81"
+hmacAlgorithm: "sha512"
+Raw JSON: {
+  "signatureHex": "3d37db13b20ecc4d804a1049676265b5ef5cdb6f5fb69275cbb4c8d079127c4b6c96190d8cdbe02154e82cd76ad6c241179f4ff2b1f6032cfb852c6d25c1bb81",
+  "hmacAlgorithm": "sha512"
+}
